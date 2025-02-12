@@ -41,7 +41,7 @@ app.use("/api/v1/admin" , userRoutes)
 // app.use("/subCategory", SubCategoryRoutes);
 
 // Start the server
-const port = process.env.PORT || 8002;  // Use the port from environment variable or default to 8002
+const port = process.env.PORT || 8006;  // Use the port from environment variable or default to 8002
 app.listen(port, () => {
     console.log("Server running on "+ port);
 });
