@@ -3,7 +3,7 @@ const { post , get } = require("../../controllers/adminControllers");
 const authMiddleware = require("../../middlewares/authMiddleware");
 const { isAdmin } = require("../../middlewares/isAdmin");
 
-route.post("/add" ,authMiddleware, isAdmin, post)
+route.post("/add" , post)
 route.get("/get", get )
 
 module.exports = route
